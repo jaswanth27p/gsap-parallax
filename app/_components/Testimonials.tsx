@@ -55,22 +55,22 @@ export default function Testimonials({ }: Props) {
             </div>
             <div className="grid grid-cols-4 w-full gap-4 mt-16">
                 <div ref={addToRefs}>
-                    <div className="relative w-full h-full ">
-                        <Image className='aspect-square' src={'/Hero_BG.png'} fill style={{ objectFit: 'cover' }} alt={'about img'} />
+                    <div className="relative w-full aspect-square">
+                        <Image src={'/Hero_BG.png'} fill style={{ objectFit: 'cover' }} alt={'about img'} />
                     </div>
                     <div>Ingenios innovative approach and attention to detail made all the difference in our project. The collaborative process was seamless, and the outcome exceeded our expectations.</div>
                 </div>
                 <div>
                 </div>
                 <div ref={addToRefs}>
-                    <div className="relative w-full h-full ">
-                        <Image className='aspect-square' src={'/About_IMG.png'} fill style={{ objectFit: 'cover' }} alt={'about img'} />
+                    <div className="relative w-full aspect-square ">
+                        <Image src={'/About_IMG.png'} fill style={{ objectFit: 'cover' }} alt={'about img'} />
                     </div>
                     <div>Ingenios innovative approach and attention to detail made all the difference in our project. The collaborative process was seamless, and the outcome exceeded our expectations.</div>
                 </div>
                 <div ref={addToRefs}>
-                    <div className="relative w-full h-full ">
-                        <Image className='aspect-square' src={'/Hero_BG.png'} fill style={{ objectFit: 'cover' }} alt={'about img'} />
+                    <div className="relative w-full aspect-square ">
+                        <Image src={'/Hero_BG.png'} fill style={{ objectFit: 'cover' }} alt={'about img'} />
                     </div>
                     <div>Ingenios innovative approach and attention to detail made all the difference in our project. The collaborative process was seamless, and the outcome exceeded our expectations.</div>
                 </div>
