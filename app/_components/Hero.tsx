@@ -29,7 +29,7 @@ export default function Hero({ }: Props) {
     }, [])
 
     return (
-        <div className='relative min-h-screen w-screen flex items-center justify-center parallax-container mb-[20%]'>
+        <div className='relative min-h-screen w-screen flex items-center justify-center parallax-container mb-[20%] overflow-x-hidden'>
             <Image className='-z-10 hero-bg' src={'/Hero_BG.png'} alt={'hero bg'} fill style={{ objectPosition: 'center', objectFit: 'cover' }} />
             <Image className='center-logo' src={'/LOGO_CENTER.svg'} alt={'center logo'} width={125} height={125} />
         </div>
