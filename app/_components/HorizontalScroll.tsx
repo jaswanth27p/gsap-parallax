@@ -27,7 +27,6 @@ const HorizontalScroll = () => {
                 trigger: container,
                 pin: true,
                 scrub: 2,
-                markers:true
             },
         });
     }, []);

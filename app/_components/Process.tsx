@@ -35,9 +35,9 @@ export default function Prrocess({ }: Props) {
 
         imageRefs.current.forEach((image, index) => {
             tl.fromTo(image, {
-                y: 200 + index * 100, opacity: 0
+                y: 200 + index * 100 , opacity: 0
             }, {
-                y: 0, opacity: 1, duration: 1
+                y: index%2 * 50, opacity: 1, duration: 1
             }, "-=0.8")
         })
     }, [])

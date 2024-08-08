@@ -40,7 +40,7 @@ export default function Testimonials({ }: Props) {
             const distance = distances[index % distances.length]; // Use modulo to cycle through distances
             const duration = (distance / Math.max(...distances)) * maxDuration; // Calculate duration based on distance
             tl.fromTo(image, {
-                y: distance+50
+                y: distance+100
             }, {
                 y: distance 
             }, 0)  
