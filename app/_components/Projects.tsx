@@ -29,7 +29,7 @@ export default function Projects({ }: Props) {
             scrollTrigger: {
                 trigger: containerRef.current,
                 start: 'top bottom',
-                end: 'bottom center',
+                end: 'bottom top',
                 scrub: 1,
             }
         });
@@ -53,6 +53,14 @@ export default function Projects({ }: Props) {
                     ease: 'power1.inOut'
                 }, 0);
         });
+
+        tl.fromTo('.black-line',
+            { yPercent: 0 }, // Start position at the top
+            {
+                yPercent: -100, // Move the line upwards to the top of the container
+                ease: 'none',
+                duration: 1, // Full duration based on the timeline's scroll progress
+            }, 0);
     }, []);
 
     return (
@@ -78,7 +86,7 @@ export default function Projects({ }: Props) {
                         </div>
                     </div>
                 </div>
-                <div></div>
+                <div className='flex items-center justify-center '> <div className='black-line w-[2px] h-full bg-black'></div> </div>
                 <div className='col-span-1 row-span-1'>
                     <div className='overflow-hidden'>
                         <div ref={addToRefs} className="relative w-full h-full aspect-square">
