@@ -86,7 +86,7 @@ export default function Hero({ }: Props) {
     }, []);
 
     return (
-        <div className='relative min-h-screen w-screen flex items-center justify-center parallax-container mb-[20%] overflow-hidden'>
+        <div className='relative min-h-screen w-screen flex items-center justify-center parallax-container mb-[20%]  overflow-hidden'>
             <div className="absolute white-bg inset-0 bg-white "></div>
             <Image
                 className='-z-10 hero-bg'
