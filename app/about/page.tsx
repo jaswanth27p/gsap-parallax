@@ -48,15 +48,15 @@ export default function Page({ }: Props) {
                     });
                 }
             });
-            gsap.fromTo(imgContainerRef.current,{
-                y:0
+            gsap.fromTo(imgContainerRef.current, {
+                y: 0
             }, {
                 y: -100,
                 scrollTrigger: {
                     trigger: imgContainerRef.current,
                     scrub: 1,
-                    start:'top top',
-                    end:'bottom top',
+                    start: 'top top',
+                    end: 'bottom top',
                 }
             });
             gsap.set(paths, {
@@ -97,7 +97,11 @@ export default function Page({ }: Props) {
                     </div>
                 </div>
             </div>
-            <div className="h-screen"></div>
+            <div className="h-screen relative grid grid-cols-2">
+                <div className='relative w-full h-full col-start-2'>
+                    <Image className='clip-custom-shape' src={'/about.png'} alt="" fill />
+                </div>
+            </div>
         </div>
     )
 }

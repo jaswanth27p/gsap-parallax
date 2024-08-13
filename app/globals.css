@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.clip-custom-shape {
+  clip-path: polygon(
+    0% 40%,   /* Starting point at the left side, 60% from the bottom */
+    75% 0%,   /* Point at 75% from the left, top edge */
+    100% 20%, /* Point at the right edge, 60% from the bottom */
+    100% 100%, /* Bottom right corner */
+    0% 100%   /* Bottom left corner */
+  );
+}
